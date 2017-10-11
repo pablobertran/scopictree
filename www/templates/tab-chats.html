@@ -1,0 +1,16 @@
+<ion-view view-title="TreeView" style="margin-top: 10%">
+      <style media="screen">
+        li {
+          margin-left: 20px !important;
+          list-style: none !important;
+        }
+      </style>
+
+      <textarea  placeholder="Paste the JSON" name="name" ng-model="in" rows="8" cols="80"></textarea>
+      <button type="button" data-ng-click="process()" class="button button-block button-positive" name="button">Process</button>
+      <div class="" data-ng-include="url">
+      </div>
+
+      <button type="button" data-ng-click="getList()" class="button button-block button-balanced" name="button">Get List</button>
+      <textarea name="name" ng-model="listText" rows="8" cols="80">{{listText}}</textarea>
+</ion-view>

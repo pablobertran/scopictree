@@ -1,0 +1,5 @@
+<input type="checkbox" data-ng-model="data.check" data-ng-click="changeUp(data)" data-ng-change="changeData(data, tree)" />
+<label>{{data.name}}</label>
+<ul>
+  <li ng-repeat="data in data.children" ng-include="'templates/tree_item_renderer.html'"></li>
+</ul>
